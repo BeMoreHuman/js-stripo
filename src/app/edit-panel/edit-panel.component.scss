@@ -1,0 +1,43 @@
+.panel-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  border: 5px solid #1976d2;
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h3 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-style: italic;
+  }
+  label {
+    flex-shrink: 0;
+    margin-right: 15px;
+    width: 150px;
+  }
+  input {
+    padding: 6px 20px 6px 5px;
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    &:focus {
+      border: 2px solid #1976d2;
+      outline: none;
+    }
+  }
+  button {
+    margin-left: auto;
+    padding: 6px 5px;
+    width: 100px;
+    border: 2px solid darkgreen;
+    background: transparent;
+  }
+}

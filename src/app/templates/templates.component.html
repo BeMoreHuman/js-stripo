@@ -1,0 +1,11 @@
+<h2>My Templates</h2>
+
+<ul class="templates">
+  <li *ngFor="let template of templates">
+    <a routerLink="/detail/{{template.id}}">
+      <span class="badge">{{template.id}}</span>
+      {{template.name}}
+      <span class="time">{{template.modified | date:'mm:hh dd/MM/yyyy'}}</span>
+    </a>
+  </li>
+</ul>

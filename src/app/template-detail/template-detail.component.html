@@ -1,0 +1,4 @@
+
+<app-edit-panel *ngIf="templateService.isEdit" (update)="onUpdate()"></app-edit-panel>
+
+<div #wrapper *ngIf="template" class="template-wrapper" [innerHTML]="template.template | safe: 'html'"></div>

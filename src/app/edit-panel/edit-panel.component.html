@@ -1,0 +1,12 @@
+<form class="panel-form">
+  <h3>Edit panel</h3>
+  <div class="panel-form__row">
+    <label for="templateText">Text:</label>
+    <input id="templateText" type="text" [(ngModel)]="templateService.editableElem.text" name="templateText">
+  </div>
+  <div class="panel-form__row">
+    <label for="templateFontSize">Font size (px):</label>
+    <input id="templateFontSize" type="text" [(ngModel)]="templateService.editableElem.fontSize" name="fontSize">
+  </div>
+  <button (click)="save()">save</button>
+</form>
